@@ -6,6 +6,8 @@ import Model.Student;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserService {
 
@@ -44,7 +46,17 @@ public class UserService {
     }
 
     public void editUser(int id, Student student) throws SQLException{
-//        Strin
+
+        String query = "update users set full_name=?,userName=?,password=?," +
+                "role=? where id=?";
+        PreparedStatement pstm = new DBConnection().getStatement(query);
+        pstm.setString(1, student.getFullName());
+        pstm.setString(2, student.getUserName());
+        pstm.setString(3, student.getPassword());
+//        pstm.setString(4, student.getRole());
+        pstm.setInt(5, id);
+
+        pstm.execute();
     }
 
     public Student getUser(String userName, String password){
@@ -72,6 +84,32 @@ public class UserService {
             throw new RuntimeException(e);
         }
         return student;
+    }
+
+
+    public List<Student> getUserList() {
+        List<Student> userList = new ArrayList<>();
+        String query = "select * from users";
+        System.out.println(query);
+        PreparedStatement pstm = new DBConnection().getStatement(query);
+        try {
+            ResultSet rs = pstm.executeQuery();
+            while (rs.next()) {
+                Student student = new Student();
+
+                student.setId(rs.getInt("id"));
+                student.setFullName(rs.getString("fullName"));
+                student.setUserName(rs.getString("userName"));
+                student.setPassword(rs.getString("password"));
+
+
+                userList.add(student);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return userList;
     }
 
 

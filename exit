@@ -1,0 +1,24 @@
+[33mcommit f5ba9ecfda65650a2a0c76d1567576edcb42c04a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 31e3205 c566fca
+Author: Sandip <srai68141@gmail.com>
+Date:   Tue Feb 21 13:43:35 2023 +0545
+
+    Merge branch 'main' of https://github.com/kurenaisandip/LastCollegeProject-Advance_Java
+
+[33mcommit 31e3205dd3e1091fe3edf766a49173ced2a5433b[m
+Author: Sandip <srai68141@gmail.com>
+Date:   Tue Feb 21 13:38:59 2023 +0545
+
+    Sir le class ma garaunu bhako Falgun 9
+
+[33mcommit c566fcac143a9363ab27b3221e9f161a2d6ad14b[m
+Author: kurenaisandip <80330653+kurenaisandip@users.noreply.github.com>
+Date:   Tue Feb 21 08:55:31 2023 +0545
+
+    Delete .idea directory
+
+[33mcommit 7cce7283c5a68a17c717730b886b76844c9f7aa5[m
+Author: Sandip <srai68141@gmail.com>
+Date:   Sun Feb 19 14:58:03 2023 +0545
+
+    First commit
