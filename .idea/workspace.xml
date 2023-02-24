@@ -10,30 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0382829-5ca1-4a8c-8941-c48efa9d9ebe" name="Changes" comment="For new">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Pages/dashboard.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Pages/listuser.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Pages/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_5_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/LastCollegeProject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/LastCollegeProject_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LastCollegeProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LastCollegeProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lastcollegeproject/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lastcollegeproject/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/WEB-INF/classes/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/WEB-INF/classes/Service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Pages/listuser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Pages/listuser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Pages/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Pages/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/listuser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/listuser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/WEB-INF/classes/com/example/lastcollegeproject/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/WEB-INF/classes/com/example/lastcollegeproject/HelloServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/WEB-INF/pages/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/lastcollegeproject/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/lastcollegeproject/HelloServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,14 +73,21 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jiwan/IdeaProjects/LastCollegeProject/src/main/webapp/WEB-INF&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jiwan\IdeaProjects\LastCollegeProject\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Jiwan\IdeaProjects\LastCollegeProject\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jiwan\IdeaProjects\LastCollegeProject\.idea\libraries" />
       <recent name="C:\Users\Jiwan\IdeaProjects\LastCollegeProject\src\main\webapp\WEB-INF\pages" />
     </key>
   </component>
@@ -309,6 +305,12 @@
       <workItem from="1676999691906" duration="839000" />
       <workItem from="1677027221297" duration="960000" />
       <workItem from="1677039532309" duration="4430000" />
+      <workItem from="1677052717471" duration="470000" />
+      <workItem from="1677053198656" duration="1220000" />
+      <workItem from="1677124393115" duration="1609000" />
+      <workItem from="1677226973630" duration="40000" />
+      <workItem from="1677236598830" duration="1598000" />
+      <workItem from="1677256955192" duration="1678000" />
     </task>
     <servers />
   </component>

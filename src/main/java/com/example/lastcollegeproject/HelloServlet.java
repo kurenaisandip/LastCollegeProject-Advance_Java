@@ -105,7 +105,7 @@ public class HelloServlet extends HttpServlet {
             List<Student> studentList = new UserService().getUserList();
 
             request.setAttribute("student", student);
-            request.setAttribute("studenlist", studentList);
+            request.setAttribute("studentlist", studentList);
             RequestDispatcher rd = request.getRequestDispatcher("Pages/listuser.jsp");
             rd.forward(request, response);
 

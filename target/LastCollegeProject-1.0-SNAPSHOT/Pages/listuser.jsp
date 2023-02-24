@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>List User</title>
@@ -27,19 +27,25 @@
                     <th>Full Name</th>
                     <th>Username</th>
                     <th>password</th>
-                    <th>Role</th>
+<%--                    <th>Role</th>--%>
                 </tr>
 
-                <c:forEach items="${studenlist}" var="student">
+                <c:forEach items="${studentlist}" var="student">
                     <tr>
                         <td>${student.id}</td>
                         <td>${student.fullName}</td>
-                        <td>${student.username}</td>
+                        <td>${student.userName}</td>
                         <td>${student.password}</td>
 
                         <td><a href="user?page=userDetails&id=${student.id}">View Details</a></td>
                     </tr>
                 </c:forEach>
+
+<%--                <c:forEach var="i" begin="1" end="5">--%>
+<%--                    Item <c:out value="${i}"/><p>--%>
+
+<%--                </p>--%>
+<%--                </c:forEach>--%>
 
             </table>
         </div>

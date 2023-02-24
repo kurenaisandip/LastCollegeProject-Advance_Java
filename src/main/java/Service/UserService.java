@@ -89,7 +89,7 @@ public class UserService {
 
     public List<Student> getUserList() {
         List<Student> userList = new ArrayList<>();
-        String query = "select * from users";
+        String query = "select * from user";
         System.out.println(query);
         PreparedStatement pstm = new DBConnection().getStatement(query);
         try {
