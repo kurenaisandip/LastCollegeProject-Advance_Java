@@ -11,17 +11,17 @@ public class DBConnection {
 
     public DBConnection(){
 
-       try {
-           Class.forName("com.mysql.cj.jdbc.Driver");
-           String dbURL = "jdbc:mysql://localhost:3306/finalProject";
-           String dbName = "root";
-           String dbPassword = "";
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            String dbURL = "jdbc:mysql://localhost:3306/finalProject";
+            String dbName = "root";
+            String dbPassword = "";
 
-           connection = DriverManager.getConnection(dbURL,dbName,dbPassword);
-           System.out.printf("DB Connected");
-       }catch (SQLException | ClassNotFoundException e){
-           e.printStackTrace();
-       }
+            connection = DriverManager.getConnection(dbURL,dbName,dbPassword);
+            System.out.printf("DB Connected");
+        }catch (SQLException | ClassNotFoundException e){
+            e.printStackTrace();
+        }
 
 
     }

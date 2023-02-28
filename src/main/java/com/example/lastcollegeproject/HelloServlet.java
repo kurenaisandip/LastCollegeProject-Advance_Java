@@ -2,6 +2,7 @@ package com.example.lastcollegeproject;
 
 import java.io.*;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,7 +70,7 @@ public class HelloServlet extends HttpServlet {
             rd.forward(request, response);
         }
 
-//        To register a new acount
+//        To register a new account
         if (action.equalsIgnoreCase("register"))
 
         {
@@ -99,6 +100,7 @@ public class HelloServlet extends HttpServlet {
             rd.forward(request, response);
         }
 
+//        Show the user list in list user page
         if (action.equalsIgnoreCase("listuser") ){
 
             Student student = new Student();
@@ -110,8 +112,69 @@ public class HelloServlet extends HttpServlet {
             rd.forward(request, response);
 
 
-            }
         }
+
+//        For user_details
+        if (action.equalsIgnoreCase("userDetails"))
+        {
+            int id = Integer.parseInt(request.getParameter("id"));
+            Student student = new UserService().getUserRow(id);
+            request.setAttribute("id", id);
+            request.setAttribute("student", student);  //Why this
+
+            RequestDispatcher rd = request.getRequestDispatcher("Pages/user_details.jsp");
+            rd.forward(request, response);
+        }
+
+        // for deleting users in user_details page
+        if (action.equalsIgnoreCase("deleteUser"))
+
+        {
+            int id = Integer.parseInt(request.getParameter("id"));
+            UserService userService = new UserService();
+            userService.deleteUser(id);
+            List<Student> userList = new UserService().getUserList();
+            request.setAttribute("userList", userList);
+            RequestDispatcher rd = request.getRequestDispatcher("Pages/listuser.jsp");
+            rd.forward(request, response);
+        }
+
+
+        // for editing users
+        if (action.equalsIgnoreCase("userEdit"))
+
+        {
+            int id = Integer.parseInt(request.getParameter("id"));
+            System.out.println(id);
+            Student student = new UserService().getUserRow(id);
+            request.setAttribute("id", id);
+            request.setAttribute("student", student);
+            RequestDispatcher rd = request.getRequestDispatcher("Pages/update_user.jsp");
+            rd.forward(request, response);
+        }
+
+        if (action.equalsIgnoreCase("editUser"))
+
+        {
+            Student student = new Student();
+            int id = Integer.parseInt(request.getParameter("id"));
+            student.setFullName(request.getParameter("fullName"));
+            student.setUserName(request.getParameter("userName"));
+            student.setPassword(request.getParameter("password"));
+
+            try {
+                new UserService().editUser(id, student);
+            } catch ( SQLException e) {
+                e.printStackTrace();
+            }
+            List<Student> userList = new UserService().getUserList();
+            request.setAttribute("userList", userList);
+            RequestDispatcher rd = request.getRequestDispatcher("Pages/list_user.jsp");
+            rd.forward(request, response);
+        }
+
+
+    }
 
 
 

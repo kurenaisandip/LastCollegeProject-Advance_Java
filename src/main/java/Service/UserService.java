@@ -11,67 +11,53 @@ import java.util.List;
 
 public class UserService {
 
-    public void insertUser(Student student){
+    public void insertUser(Student student) {
         String query = "insert into user(userName, fullName, password)" + "values(?,?,?)"; // same as database
 
         PreparedStatement preparedStatements = new DBConnection().getStatement(query);  // execute parametrized query
 
-        try{
+        try {
             preparedStatements.setString(1, student.getUserName());
             preparedStatements.setString(2, student.getFullName());
             preparedStatements.setString(3, student.getPassword());
 
             preparedStatements.execute();
 
-        }
-        catch(
-                SQLException e){
+        } catch (
+                SQLException e) {
             e.printStackTrace();
         }
     }
 
 
-    // Delete User
-    public void deleteUser(int id){
-        String query = "delete from user where id = ?";
-        PreparedStatement ps = new DBConnection().getStatement(query);
+////    yesle k garcha
+//    public void editUser(int id, Student student) throws SQLException {
+//
+//        String query = "update users set full_name=?,userName=?,password=?," +
+//                "role=? where id=?";
+//        PreparedStatement pstm = new DBConnection().getStatement(query);
+//        pstm.setString(1, student.getFullName());
+//        pstm.setString(2, student.getUserName());
+//        pstm.setString(3, student.getPassword());
+////        pstm.setString(4, student.getRole());
+//        pstm.setInt(5, id);
+//
+//        pstm.execute();
+//    }
 
-        try{
-            ps.setInt(1,id);
-            ps.execute();
-        }
-        catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void editUser(int id, Student student) throws SQLException{
-
-        String query = "update users set full_name=?,userName=?,password=?," +
-                "role=? where id=?";
-        PreparedStatement pstm = new DBConnection().getStatement(query);
-        pstm.setString(1, student.getFullName());
-        pstm.setString(2, student.getUserName());
-        pstm.setString(3, student.getPassword());
-//        pstm.setString(4, student.getRole());
-        pstm.setInt(5, id);
-
-        pstm.execute();
-    }
-
-    public Student getUser(String userName, String password){
+    public Student getUser(String userName, String password) {
         Student student = null;
 
         String query = "select * from user where userName=? and password=?";
         PreparedStatement ps = new DBConnection().getStatement(query);
 
         try {
-          ps.setString(1, userName);
-          ps.setString(2, password);
+            ps.setString(1, userName);
+            ps.setString(2, password);
 
             ResultSet rs = ps.executeQuery();
 
-            while (rs.next()){
+            while (rs.next()) {
                 student = new Student();
 
                 student.setId(rs.getInt("id"));
@@ -87,6 +73,7 @@ public class UserService {
     }
 
 
+//    This is related to list user page
     public List<Student> getUserList() {
         List<Student> userList = new ArrayList<>();
         String query = "select * from user";
@@ -112,5 +99,52 @@ public class UserService {
         return userList;
     }
 
+    //    For getting user details in user list
+    public Student getUserRow(int id) {
+        Student student = new Student();
+        String query = "select * from user where id = ?";
+        PreparedStatement pstm = new DBConnection().getStatement(query);
 
+        try {
+            pstm.setInt(1, id);
+            ResultSet rs = pstm.executeQuery();
+            while (rs.next()) {
+                student.setId(rs.getInt("id"));
+                student.setFullName(rs.getString("fullName"));
+                student.setUserName(rs.getString("userName"));
+                student.setPassword(rs.getString("password"));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return student;
+    }
+
+    // Delete User
+    public void deleteUser(int id) {
+        String query = "delete from user where id = ?";
+        PreparedStatement ps = new DBConnection().getStatement(query);
+
+        try {
+            ps.setInt(1, id);
+            ps.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+//    For editing users
+public void editUser(int id, Student student) throws SQLException {
+
+    String query = "update user set fullName=?, userName=?, password=? where id=?";
+
+    try (PreparedStatement pstm = new DBConnection().getStatement(query)) {
+        pstm.setString(1, student.getFullName());
+        pstm.setString(2, student.getUserName());
+        pstm.setString(3, student.getPassword());
+        pstm.setInt(4, id);
+        pstm.executeUpdate();
+    }
+
+}
 }
