@@ -13,7 +13,7 @@
 
 </head>
 <body>
-
+<%@ include file="../include/nav.jsp"%>
 <div id="wrapper">
 
     <!-- Sidebar -->
@@ -49,6 +49,7 @@
 
             </table>
         </div>
+
 
 </body>
 </html>

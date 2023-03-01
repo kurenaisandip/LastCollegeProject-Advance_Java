@@ -16,7 +16,7 @@
 <body>
 <div id="wrapper">
 
-<%--    <%@include file="../includes/sidebar.jsp" %>--%>
+    <%@ include file="../include/nav.jsp"%>
     <div class="container">
         <h1>Admin Registration Form</h1>
         <form action="user?page=editUser" method="post">

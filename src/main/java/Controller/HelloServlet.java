@@ -1,4 +1,4 @@
-package com.example.lastcollegeproject;
+package Controller;
 
 import java.io.*;
 import java.sql.PreparedStatement;
@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import DBConnection.DBConnection;
+import Hashing.HashPassword;
 import Model.Student;
 import Service.UserService;
 import jakarta.servlet.RequestDispatcher;
@@ -35,10 +36,11 @@ public class HelloServlet extends HttpServlet {
 
 
         String action = request.getParameter("page");
+
         if (action.equalsIgnoreCase("login") ){
 
             String username = request.getParameter("username");
-            String password = (request.getParameter("password"));
+            String password = HashPassword.hashPassword(request.getParameter("password"));
             System.out.println(username + " " + password + " ");
 
             Student student = new UserService().getUser(username, password);
@@ -78,7 +80,7 @@ public class HelloServlet extends HttpServlet {
 
             student.setUserName(request.getParameter("username"));
             student.setFullName(request.getParameter("fullName"));
-            student.setPassword(request.getParameter("password"));
+            student.setPassword(HashPassword.hashPassword(request.getParameter("password")));
 
             new UserService().insertUser(student);
 
@@ -171,6 +173,14 @@ public class HelloServlet extends HttpServlet {
             request.setAttribute("userList", userList);
             RequestDispatcher rd = request.getRequestDispatcher("Pages/list_user.jsp");
             rd.forward(request, response);
+        }
+
+        if(action.equalsIgnoreCase("logout")){
+            HttpSession session = request.getSession(false);
+            session.invalidate();
+
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");
+            requestDispatcher.forward(request, response);
         }
 
 

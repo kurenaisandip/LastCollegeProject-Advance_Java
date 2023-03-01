@@ -16,6 +16,8 @@
 </head>
 <body>
 
+<%@ include file="../include/nav.jsp"%>
+
 <div class="container">
   <div class="table-responsive">
     <table class="table">

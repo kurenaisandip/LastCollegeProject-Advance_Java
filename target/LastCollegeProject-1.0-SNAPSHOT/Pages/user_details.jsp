@@ -8,7 +8,7 @@
 <body>
 <div id="wrapper">
 
-<%--    <%@include file="../includes/sidebar.jsp" %>--%>
+    <%@ include file="../include/nav.jsp"%>
 
     <div class="container">
         <div class="table-responsive">

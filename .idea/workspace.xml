@@ -10,16 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0382829-5ca1-4a8c-8941-c48efa9d9ebe" name="Changes" comment="For new">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Pages/list_user.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Pages/update_user.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Pages/user_details.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Hashing/HashPassword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/include/nav.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DBConnection/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBConnection/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lastcollegeproject/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lastcollegeproject/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/WEB-INF/classes/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/WEB-INF/classes/Service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lastcollegeproject/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Pages/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Pages/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Pages/list_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Pages/list_user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Pages/listuser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Pages/listuser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Pages/update_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Pages/update_user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Pages/user_details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Pages/user_details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/list_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/list_user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/listuser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/listuser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/update_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/update_user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/user_details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/Pages/user_details.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/WEB-INF/classes/com/example/lastcollegeproject/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LastCollegeProject-1.0-SNAPSHOT/WEB-INF/classes/com/example/lastcollegeproject/HelloServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/lastcollegeproject/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/lastcollegeproject/HelloServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,9 +36,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -317,6 +323,7 @@
       <workItem from="1677559650477" duration="383000" />
       <workItem from="1677588670936" duration="128000" />
       <workItem from="1677590207186" duration="4441000" />
+      <workItem from="1677642192615" duration="3217000" />
     </task>
     <servers />
   </component>
